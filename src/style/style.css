@@ -1,0 +1,39 @@
+* { margin:0; padding:0;}
+ul,ol,li { list-style:none;}
+a { text-decoration:none;}
+
+#header { position:fixed; left:0; top:0; display:flex; justify-content:center;
+          width:100%; height:100px; transition:all 0.5s;
+          z-index:9999; background-color:#ffc0cb;}
+#header.on { background-color:orange;}
+
+#header .center {width:1200px; display:flex; justify-content:space-between; 
+                 align-items:center; }
+#header .center ul{ display:flex;}
+#header .center ul li{ margin:0 20px;}
+#header .center ul li a{ color:#000;}
+
+#container > .conts { height:100vh; display:flex; 
+                      justify-content:center; align-items:center;}
+#container > .cont1 {background-color:yellowgreen;}
+#container > .cont1 h2 { opacity:0; transition:all 0.5s; transform:translateY(200px);}
+#container > .cont1.show h2 { opacity:1; transform:translateY(0px);}
+
+#container > .cont2 {background-color:yellow;}
+#container > .cont2 > div { width:250px; height:200px; background-color:red; 
+                            transition:all 0.5s; opacity:0;}
+#container > .cont2.show > div { opacity:1;} 
+
+#container > .cont3 {background-color:skyblue;}
+/*여기에 있는 박스 4개는 알아서 작업*/
+#container > .cont4 {background-color:hotpink;}
+/*여기에 있는 h2는 알아서 작업*/
+
+#leftSide { position:fixed; left:100px; top:50%; transform:translateY(-50%);}
+#leftSide ul li{ margin:20px 0;}
+#leftSide ul li a { color:#000;}
+#leftSide ul li.on a { color:#fff;} 
+
+/*테스트용 h2*/
+.test1 { height:10000px;}
+
